@@ -111,6 +111,7 @@ else()
         message(STATUS "Using pre-cloned spdlog from Docker environment")
         add_library(spdlog INTERFACE)
         target_include_directories(spdlog INTERFACE /tmp/spdlog/include)
+        target_compile_definitions(spdlog INTERFACE SPDLOG_FMT_EXTERNAL=0)
     else()
         FetchContent_Declare(
             spdlog
@@ -124,6 +125,7 @@ else()
         endif()
         add_library(spdlog INTERFACE)
         target_include_directories(spdlog INTERFACE ${spdlog_SOURCE_DIR}/include)
+        target_compile_definitions(spdlog INTERFACE SPDLOG_FMT_EXTERNAL=0)
     endif()
 
     # Kokkos mdspan (header-only, for std::mdspan fallback)

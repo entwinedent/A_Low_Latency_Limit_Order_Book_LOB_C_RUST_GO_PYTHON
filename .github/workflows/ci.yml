@@ -71,11 +71,6 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
     
-    - name: Set up CMake
-      uses: jwlawson/actions-setup-cmake@v3
-      with:
-        cmake-version: '3.28.x'
-    
     - name: Build C++ Library
       run: |
         cmake -B build -S . -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_STANDARD=23
@@ -141,11 +136,6 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
-    
-    - name: Set up CMake
-      uses: jwlawson/actions-setup-cmake@v3
-      with:
-        cmake-version: '3.28.x'
     
     - name: Configure with clang-tidy
       run: |

@@ -4,6 +4,13 @@
 #include <stdexcept>
 #include <spdlog/spdlog.h>
 
+// Platform-specific export macros
+#ifdef _WIN32
+#define LOB_API __declspec(dllexport)
+#else
+#define LOB_API __attribute__((visibility("default")))
+#endif
+
 // C++ wrapper for trade callback
 class CTradeCallback {
 public:
@@ -30,7 +37,7 @@ private:
 
 extern "C" {
 
-OrderBookHandle create_order_book() {
+LOB_API OrderBookHandle create_order_book() {
     try {
         auto* book = new lob::OrderBook();
         spdlog::info("Created order book instance");
@@ -44,7 +51,7 @@ OrderBookHandle create_order_book() {
     }
 }
 
-void destroy_order_book(OrderBookHandle handle) {
+LOB_API void destroy_order_book(OrderBookHandle handle) {
     if (handle) [[likely]] {
         try {
             delete static_cast<lob::OrderBook*>(handle);
@@ -57,7 +64,7 @@ void destroy_order_book(OrderBookHandle handle) {
     }
 }
 
-void set_trade_callback(OrderBookHandle handle, TradeCallback callback) {
+LOB_API void set_trade_callback(OrderBookHandle handle, TradeCallback callback) {
     if (handle) [[likely]] {
         try {
             auto* book = static_cast<lob::OrderBook*>(handle);
@@ -70,7 +77,7 @@ void set_trade_callback(OrderBookHandle handle, TradeCallback callback) {
     }
 }
 
-ErrorCode add_limit_order(
+LOB_API ErrorCode add_limit_order(
     OrderBookHandle handle,
     uint64_t id,
     double price,
@@ -105,7 +112,7 @@ ErrorCode add_limit_order(
     }
 }
 
-ErrorCode cancel_order(OrderBookHandle handle, uint64_t id) {
+LOB_API ErrorCode cancel_order(OrderBookHandle handle, uint64_t id) {
     if (!handle) [[unlikely]] {
         return ERROR_ORDER_NOT_FOUND;
     }
@@ -131,7 +138,7 @@ ErrorCode cancel_order(OrderBookHandle handle, uint64_t id) {
     }
 }
 
-double get_best_bid(OrderBookHandle handle) {
+LOB_API double get_best_bid(OrderBookHandle handle) {
     if (!handle) [[unlikely]] {
         return 0.0;
     }
@@ -150,7 +157,7 @@ double get_best_bid(OrderBookHandle handle) {
     }
 }
 
-double get_best_ask(OrderBookHandle handle) {
+LOB_API double get_best_ask(OrderBookHandle handle) {
     if (!handle) [[unlikely]] {
         return 0.0;
     }
@@ -169,7 +176,7 @@ double get_best_ask(OrderBookHandle handle) {
     }
 }
 
-uint32_t get_quantity_at_price(OrderBookHandle handle, double price, int side) {
+LOB_API uint32_t get_quantity_at_price(OrderBookHandle handle, double price, int side) {
     if (!handle) [[unlikely]] {
         return 0;
     }
@@ -189,7 +196,7 @@ uint32_t get_quantity_at_price(OrderBookHandle handle, double price, int side) {
     }
 }
 
-size_t get_bid_depth(OrderBookHandle handle) {
+LOB_API size_t get_bid_depth(OrderBookHandle handle) {
     if (!handle) [[unlikely]] {
         return 0;
     }
@@ -206,7 +213,7 @@ size_t get_bid_depth(OrderBookHandle handle) {
     }
 }
 
-size_t get_ask_depth(OrderBookHandle handle) {
+LOB_API size_t get_ask_depth(OrderBookHandle handle) {
     if (!handle) [[unlikely]] {
         return 0;
     }
@@ -223,7 +230,7 @@ size_t get_ask_depth(OrderBookHandle handle) {
     }
 }
 
-int is_empty(OrderBookHandle handle) {
+LOB_API int is_empty(OrderBookHandle handle) {
     if (!handle) [[unlikely]] {
         return 1;
     }
@@ -240,7 +247,7 @@ int is_empty(OrderBookHandle handle) {
     }
 }
 
-size_t pool_capacity(OrderBookHandle handle) {
+LOB_API size_t pool_capacity(OrderBookHandle handle) {
     if (!handle) [[unlikely]] {
         return 0;
     }
@@ -257,7 +264,7 @@ size_t pool_capacity(OrderBookHandle handle) {
     }
 }
 
-size_t pool_allocated(OrderBookHandle handle) {
+LOB_API size_t pool_allocated(OrderBookHandle handle) {
     if (!handle) [[unlikely]] {
         return 0;
     }
@@ -274,7 +281,7 @@ size_t pool_allocated(OrderBookHandle handle) {
     }
 }
 
-size_t pool_free(OrderBookHandle handle) {
+LOB_API size_t pool_free(OrderBookHandle handle) {
     if (!handle) [[unlikely]] {
         return 0;
     }
