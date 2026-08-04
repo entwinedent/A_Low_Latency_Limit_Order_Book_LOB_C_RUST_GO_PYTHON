@@ -4,7 +4,6 @@
 ![Coverage](https://img.shields.io/badge/Coverage-100%25-success)
 ![C++ Standard](https://img.shields.io/badge/C%2B%2B-23-blue)
 ![Sanitizers](https://img.shields.io/badge/Sanitizers-ASan%20%7C%20UBSan-orange)
-![License](https://img.shields.io/badge/License-MIT-green)
 
 A high-performance limit order book (LOB) engine designed for high-frequency trading (HFT) applications. Built with C++23 featuring zero-allocation memory pools, cache-optimized data structures, and sub-microsecond latency.
 

@@ -1,0 +1,80 @@
+GLOBAL PROPRIETARY SOURCE-VISIBLE LICENSE & ENFORCEMENT TERMS
+
+COPYRIGHT (c) 2026 JAYSON MAXFIELD. ALL RIGHTS RESERVED.
+1. INTELLECTUAL PROPERTY OWNERSHIP & NO LICENSE GRANTED
+
+This repository and its underlying source code, architecture, algorithms, schemas, workflows, and documentation (collectively, the "Software") constitute the valuable proprietary intellectual property and confidential trade secrets of Jayson Maxfield ("Owner").
+
+Public visibility of this Software does NOT constitute publication, open-source licensing, or a dedication to the public domain. No license, right, or immunity—express, implied, by estoppel, or otherwise—under any copyright, patent, trademark, trade secret, or other intellectual property right, is granted to any natural person, corporate entity, government body, automated system, or AI-training framework. Access is limited strictly to ephemeral viewing via the host platform for code-audit purposes only.
+2. STRICT PROHIBITIONS & CONDITIONS OF ACCESS
+
+Any unauthorized action including, but not limited to: copying, downloading, compiling, executing, modifying, reverse-engineering, decompiling, disassembling, creating derivative works, distributing, sublicensing, selling, hosting, or utilizing this Software for commercial, non-commercial, or artificial intelligence/machine learning model training purposes—without explicit, written, and signed authorization from the Owner—is strictly prohibited and constitutes willful infringement.
+3. STATUTORY LAW REFERENCES & CIVIL/CRIMINAL REMEDIES
+
+Any unauthorized use, deployment, or exploitation triggers severe statutory remedies under applicable United States federal/state laws, European Union directives, and international treaties:
+A. UNITED STATES FEDERAL & STATE LAWS
+
+    U.S. Copyright Act (17 U.S.C. § 101 et seq.):
+
+        Injunctions (17 U.S.C. § 502): Immediate ex parte temporary restraining orders and permanent injunctions halting all operations, builds, and CI/CD pipelines.
+
+        Impoundment & Destruction (17 U.S.C. § 503): Seizure and destruction of all infringing servers, devices, repositories, and derivative code bases.
+
+        Statutory Damages & Profits (17 U.S.C. § 504): Statutory damages up to $150,000 USD per willful infringement, OR actual damages plus full disgorgement of gross profits.
+
+        Attorney’s Fees & Costs (17 U.S.C. § 505): Mandatory shifting of all legal fees, court costs, and expert witness expenses to the infringer.
+
+    Digital Millennium Copyright Act (17 U.S.C. § 1201 et seq. - DMCA):
+
+        Bypassing access controls, license keys, obfuscation, or technical measures protecting this code triggers separate statutory penalties up to $25,000 USD per violation under DMCA Anti-Circumvention provisions.
+
+    Defend Trade Secrets Act (18 U.S.C. § 1836 et seq. - DTSA) & UTSA:
+
+        Unauthorized use of proprietary algorithms or business logic constitutes trade secret misappropriation. Remedies include exemplary (double) damages and court-ordered ex parte law-enforcement seizure of computers and infrastructure storing the trade secrets.
+
+    Computer Fraud and Abuse Act (18 U.S.C. § 1030 - CFAA):
+
+        Accessing, pulling, or executing this code outside explicitly authorized HTTP web interfaces constitutes unauthorized computer access, subjecting offenders to civil claims and criminal prosecution.
+
+B. EUROPEAN UNION (EU) LAW & DIRECTIVES
+
+    EU Software Directive (Directive 2009/24/EC):
+
+        Explicitly protects computer programs as literary works under the Berne Convention. Unauthorized reproduction, loading, transmission, or decompilation triggers immediate injunctive relief and monetary damages across all 27 EU member states.
+
+    EU Trade Secrets Directive (Directive (EU) 2016/943):
+
+        Protects non-public technical code as undisclosed trade secrets. Remedies include market bans, mandatory recall/destruction of infringing software products, and full financial restitution.
+
+    EU Enforcement Directive (Directive 2004/48/EC):
+
+        Enforces rigorous evidence-preservation orders, freezing of commercial assets, and publication of court judgments against infringing parties.
+
+C. INTERNATIONAL TREATIES & MULTILATERAL AGREEMENTS
+
+    Berne Convention for the Protection of Literary and Artistic Works:
+
+        Automatic international copyright protection enforced in over 180 signatory nations without requiring local formalities.
+
+    WTO TRIPS Agreement (Articles 10 & 39):
+
+        Mandatory international enforcement of computer program copyrights and undisclosed technical data/trade secrets across all World Trade Organization member states.
+
+    WIPO Copyright Treaty (WCT):
+
+        Provides global legal remedies against the unauthorized removal of Rights Management Information (RMI) and circumvention of digital rights protection.
+
+4. LIQUIDATED DAMAGES & AUDIT RIGHTS
+
+    Pre-Agreed Liquidated Damages: The parties agree that calculating exact damages from unauthorized commercial deployment or distribution is difficult. Therefore, any unauthorized deployment, commercial integration, or re-distribution shall trigger pre-agreed liquidated damages of $250,000 USD per instance or deployment, which the parties agree represents a reasonable baseline estimate of harm and not a penalty.
+
+    Audit & Inspection Rights: Upon reasonable suspicion of infringement, the Owner reserves the right to compel the infringing entity to undergo an independent forensic software audit conducted by a certified third-party security firm at the infringer's expense.
+
+5. GOVERNING LAW, JURISDICTION, AND VENUE
+
+This agreement, and any legal disputes or torts arising out of the unauthorized access or use of this Software, shall be governed exclusively by the laws of the United States of America and the State of the Owner's primary residence, without giving effect to conflicts-of-law principles.
+
+Any legal action, lawsuit, or arbitration shall be brought exclusively in the state or federal courts located within the Owner's county/district of residence. The user explicitly consents to personal jurisdiction and venue therein and waives any defense of forum non conveniens.
+6. DISCLAIMER OF WARRANTY & LIMITATION OF LIABILITY
+
+THIS SOFTWARE IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. IN NO EVENT SHALL THE OWNER BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY ARISING FROM THE SOFTWARE OR ITS UNAUTHORIZED USE.
