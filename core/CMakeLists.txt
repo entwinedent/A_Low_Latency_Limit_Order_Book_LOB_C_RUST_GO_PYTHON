@@ -5,10 +5,6 @@ add_library(lob_core INTERFACE)
 target_include_directories(lob_core INTERFACE
     $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
 )
-if(TARGET kokkos_mdspan)
-    target_link_libraries(lob_core INTERFACE kokkos_mdspan)
-    target_compile_definitions(lob_core INTERFACE HAVE_KOKKOS_MDSPAN=1)
-endif()
 
 # Implementation library
 add_library(lob_core_impl STATIC
@@ -20,10 +16,6 @@ target_link_libraries(lob_core_impl
         lob_core
         spdlog
 )
-if(TARGET kokkos_mdspan)
-    target_link_libraries(lob_core_impl PUBLIC kokkos_mdspan)
-    target_compile_definitions(lob_core_impl PRIVATE HAVE_KOKKOS_MDSPAN=1)
-endif()
 
 # Create shared library for FFI bindings
 add_library(lob_core_shared SHARED
@@ -42,10 +34,6 @@ target_link_libraries(lob_core_shared
     PUBLIC
         spdlog
 )
-if(TARGET kokkos_mdspan)
-    target_link_libraries(lob_core_shared PUBLIC kokkos_mdspan)
-    target_compile_definitions(lob_core_shared PUBLIC HAVE_KOKKOS_MDSPAN=1)
-endif()
 
 # Set library version
 set_target_properties(lob_core_shared PROPERTIES
