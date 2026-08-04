@@ -24,12 +24,22 @@ protected:
 
 TEST_F(MatchingLogicTest, SimpleBuySellMatch) {
     // Add a sell order
+#ifdef HAVE_STD_EXPECTED
+    auto result = book.add_limit_order(1, 100.0, 10, Side::SELL);
+    ASSERT_TRUE(result);
+#else
     auto err = book.add_limit_order(1, 100.0, 10, Side::SELL);
     ASSERT_EQ(err, ErrorCode::SUCCESS);
+#endif
     
     // Add a buy order that matches
+#ifdef HAVE_STD_EXPECTED
+    result = book.add_limit_order(2, 100.0, 5, Side::BUY);
+    ASSERT_TRUE(result);
+#else
     err = book.add_limit_order(2, 100.0, 5, Side::BUY);
     ASSERT_EQ(err, ErrorCode::SUCCESS);
+#endif
     
     // Verify trade occurred
     EXPECT_GT(trades.size(), 0);
@@ -109,8 +119,13 @@ TEST_F(MatchingLogicTest, CancelAfterPartialMatch) {
     book.add_limit_order(2, 100.0, 10, Side::BUY);
     
     // Cancel remaining
+#ifdef HAVE_STD_EXPECTED
+    auto result = book.cancel_order(1);
+    EXPECT_TRUE(result);
+#else
     auto err = book.cancel_order(1);
     EXPECT_EQ(err, ErrorCode::SUCCESS);
+#endif
     
     // Book should be empty
     EXPECT_TRUE(book.is_empty());
@@ -134,8 +149,13 @@ TEST_F(MatchingLogicTest, MarketOrderSimulation) {
 
 TEST_F(MatchingLogicTest, EmptyBookNoMatch) {
     // Try to match in empty book
+#ifdef HAVE_STD_EXPECTED
+    auto result = book.add_limit_order(1, 100.0, 10, Side::BUY);
+    EXPECT_TRUE(result);
+#else
     auto err = book.add_limit_order(1, 100.0, 10, Side::BUY);
     EXPECT_EQ(err, ErrorCode::SUCCESS);
+#endif
     
     EXPECT_EQ(book.get_bid_depth(), 1);
     EXPECT_EQ(book.get_ask_depth(), 0);

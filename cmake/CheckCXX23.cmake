@@ -56,13 +56,8 @@ int main() {
 }
 " HAVE_STD_MDSPAN)
 
-# If native std::mdspan is not available, we'll use Kokkos mdspan
-if(NOT HAVE_STD_MDSPAN)
-    message(STATUS "Native std::mdspan not available, will use Kokkos mdspan")
-    set(HAVE_KOKKOS_MDSPAN 1)
-else()
-    set(HAVE_KOKKOS_MDSPAN 0)
-endif()
+# Note: Kokkos mdspan availability is checked in main CMakeLists.txt
+# based on whether the library is actually present in the environment
 
 # Check for C++23 string view improvements
 check_cxx_source_compiles("
