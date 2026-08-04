@@ -21,7 +21,7 @@
 
 #ifdef HAVE_STD_MDSPAN
 #include <mdspan>
-#elif defined(HAVE_KOKKOS_MDSPAN) && defined(__linux__)
+#elif defined(HAVE_KOKKOS_MDSPAN)
 #include <mdspan/mdspan.hpp>
 namespace std {
     // Alias Kokkos mdspan to std namespace for compatibility

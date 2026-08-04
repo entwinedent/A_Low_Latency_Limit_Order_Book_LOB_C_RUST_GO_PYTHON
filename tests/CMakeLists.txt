@@ -6,13 +6,6 @@ enable_testing()
 # GoogleTest
 include(GoogleTest)
 
-# Link Kokkos mdspan to all test targets if available
-if(TARGET kokkos_mdspan)
-    set(KOKKOS_MDSPAN_LINK kokkos_mdspan)
-else()
-    set(KOKKOS_MDSPAN_LINK "")
-endif()
-
 # Unit tests
 add_executable(test_memory_pool
     unit/Test_MemoryPool.cpp
@@ -23,7 +16,6 @@ target_link_libraries(test_memory_pool
         lob_core_impl
         gtest
         gtest_main
-        ${KOKKOS_MDSPAN_LINK}
 )
 
 add_test(NAME TestMemoryPool COMMAND test_memory_pool)
@@ -37,7 +29,6 @@ target_link_libraries(test_intrusive_list
         lob_core
         gtest
         gtest_main
-        ${KOKKOS_MDSPAN_LINK}
 )
 
 add_test(NAME TestIntrusiveList COMMAND test_intrusive_list)
@@ -51,7 +42,6 @@ target_link_libraries(test_order_book
         lob_core_impl
         gtest
         gtest_main
-        ${KOKKOS_MDSPAN_LINK}
 )
 
 add_test(NAME TestOrderBook COMMAND test_order_book)
@@ -66,7 +56,6 @@ target_link_libraries(test_arena_allocator
         lob_core_impl
         gtest
         gtest_main
-        ${KOKKOS_MDSPAN_LINK}
 )
 
 add_test(NAME TestArenaAllocator COMMAND test_arena_allocator)
@@ -80,7 +69,6 @@ target_link_libraries(test_order_types
         lob_core_impl
         gtest
         gtest_main
-        ${KOKKOS_MDSPAN_LINK}
 )
 
 add_test(NAME TestOrderTypes COMMAND test_order_types)
@@ -94,7 +82,6 @@ target_link_libraries(test_risk_manager
         lob_core_impl
         gtest
         gtest_main
-        ${KOKKOS_MDSPAN_LINK}
 )
 
 add_test(NAME TestRiskManager COMMAND test_risk_manager)
@@ -108,7 +95,6 @@ target_link_libraries(test_order_book_manager
         lob_core_impl
         gtest
         gtest_main
-        ${KOKKOS_MDSPAN_LINK}
 )
 
 add_test(NAME TestOrderBookManager COMMAND test_order_book_manager)
@@ -122,7 +108,6 @@ target_link_libraries(test_capi
         lob_core_shared
         gtest
         gtest_main
-        ${KOKKOS_MDSPAN_LINK}
 )
 
 add_test(NAME TestCAPI COMMAND test_capi)
@@ -136,7 +121,6 @@ target_link_libraries(test_metrics
         lob_core_impl
         gtest
         gtest_main
-        ${KOKKOS_MDSPAN_LINK}
 )
 
 add_test(NAME TestMetrics COMMAND test_metrics)
@@ -151,7 +135,6 @@ target_link_libraries(test_fixed_point
         lob_core_impl
         gtest
         gtest_main
-        ${KOKKOS_MDSPAN_LINK}
 )
 
 add_test(NAME TestFixedPoint COMMAND test_fixed_point)
@@ -165,7 +148,6 @@ target_link_libraries(test_price_validation
         lob_core_impl
         gtest
         gtest_main
-        ${KOKKOS_MDSPAN_LINK}
 )
 
 add_test(NAME TestPriceValidation COMMAND test_price_validation)
@@ -180,7 +162,6 @@ target_link_libraries(test_matching_logic
         lob_core_impl
         gtest
         gtest_main
-        ${KOKKOS_MDSPAN_LINK}
 )
 
 add_test(NAME TestMatchingLogic COMMAND test_matching_logic)
@@ -194,7 +175,6 @@ target_link_libraries(test_multi_symbol
         lob_core_impl
         gtest
         gtest_main
-        ${KOKKOS_MDSPAN_LINK}
 )
 
 add_test(NAME TestMultiSymbol COMMAND test_multi_symbol)
@@ -209,7 +189,6 @@ target_link_libraries(test_complete_workflow
         lob_core_impl
         gtest
         gtest_main
-        ${KOKKOS_MDSPAN_LINK}
 )
 
 add_test(NAME TestCompleteWorkflow COMMAND test_complete_workflow)

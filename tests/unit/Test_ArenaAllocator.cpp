@@ -136,12 +136,7 @@ TEST(ArenaAllocatorTest, StringAllocation) {
     char* str = static_cast<char*>(arena.allocate(100));
     ASSERT_NE(str, nullptr);
     
-#ifdef _WIN32
     strcpy_s(str, 100, "Hello, Arena!");
-#else
-    strncpy(str, "Hello, Arena!", 100);
-    str[99] = '\0'; // Ensure null-termination
-#endif
     EXPECT_STREQ(str, "Hello, Arena!");
 }
 

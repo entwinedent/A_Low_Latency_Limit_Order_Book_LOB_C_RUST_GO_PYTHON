@@ -27,7 +27,12 @@ jobs:
     
     steps:
     - name: Checkout code
-      uses: actions/checkout@v4
+      uses: actions/checkout@v3
+    
+    - name: Set up CMake
+      uses: jwlawson/setup-cmake@v2
+      with:
+        cmake-version: '3.28.x'
     
     - name: Configure CMake
       run: |
@@ -54,7 +59,7 @@ jobs:
     
     - name: Upload Benchmark Results
       if: matrix.build_type == 'Release'
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v3
       with:
         name: benchmark-results-${{ matrix.os }}-${{ matrix.build_type }}
         path: artifacts/benchmarks/
@@ -69,7 +74,12 @@ jobs:
     
     steps:
     - name: Checkout code
-      uses: actions/checkout@v4
+      uses: actions/checkout@v3
+    
+    - name: Set up CMake
+      uses: jwlawson/setup-cmake@v2
+      with:
+        cmake-version: '3.28.x'
     
     - name: Build C++ Library
       run: |
@@ -135,7 +145,12 @@ jobs:
     
     steps:
     - name: Checkout code
-      uses: actions/checkout@v4
+      uses: actions/checkout@v3
+    
+    - name: Set up CMake
+      uses: jwlawson/setup-cmake@v2
+      with:
+        cmake-version: '3.28.x'
     
     - name: Configure with clang-tidy
       run: |
@@ -160,7 +175,7 @@ jobs:
     
     steps:
     - name: Checkout code
-      uses: actions/checkout@v4
+      uses: actions/checkout@v3
     
     - name: Set up Docker Buildx
       uses: docker/setup-buildx-action@v2
@@ -179,7 +194,7 @@ jobs:
     
     steps:
     - name: Checkout code
-      uses: actions/checkout@v4
+      uses: actions/checkout@v3
     
     - name: Set up Docker Buildx
       uses: docker/setup-buildx-action@v2
@@ -206,7 +221,7 @@ jobs:
     
     steps:
     - name: Checkout code
-      uses: actions/checkout@v4
+      uses: actions/checkout@v3
     
     - name: Set up Python
       uses: actions/setup-python@v4
@@ -224,7 +239,7 @@ jobs:
         # sphinx-build -b html docs/ artifacts/docs/
     
     - name: Upload Documentation
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v3
       with:
         name: documentation
         path: artifacts/docs/
