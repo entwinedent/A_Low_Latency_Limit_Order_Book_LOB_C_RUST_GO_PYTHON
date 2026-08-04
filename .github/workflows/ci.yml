@@ -30,7 +30,7 @@ jobs:
       uses: actions/checkout@v4
     
     - name: Set up CMake
-      uses: jwlawson/setup-cmake@v3
+      uses: cmake/setup-cmake@v3
       with:
         cmake-version: '3.28.x'
     
@@ -77,7 +77,7 @@ jobs:
       uses: actions/checkout@v4
     
     - name: Set up CMake
-      uses: jwlawson/setup-cmake@v3
+      uses: cmake/setup-cmake@v3
       with:
         cmake-version: '3.28.x'
     
@@ -148,7 +148,7 @@ jobs:
       uses: actions/checkout@v4
     
     - name: Set up CMake
-      uses: jwlawson/setup-cmake@v3
+      uses: cmake/setup-cmake@v3
       with:
         cmake-version: '3.28.x'
     
