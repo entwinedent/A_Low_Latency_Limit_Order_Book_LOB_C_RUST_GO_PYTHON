@@ -18,12 +18,15 @@ jobs:
           - os: ubuntu-latest
             cc: gcc
             cxx: g++
+            cmake_generator: "Unix Makefiles"
           - os: windows-latest
             cc: cl
             cxx: cl
+            cmake_generator: "Visual Studio 17 2022"
           - os: macos-latest
             cc: clang
             cxx: clang++
+            cmake_generator: "Unix Makefiles"
     
     steps:
     - name: Checkout code
@@ -36,7 +39,7 @@ jobs:
     
     - name: Configure CMake
       run: |
-        cmake -B build -S . -DCMAKE_BUILD_TYPE=${{ matrix.build_type }} -DBUILD_TESTS=ON -DBUILD_BENCHMARKS=ON -DCMAKE_CXX_STANDARD=23
+        cmake -B build -S . -DCMAKE_BUILD_TYPE=${{ matrix.build_type }} -DBUILD_TESTS=ON -DBUILD_BENCHMARKS=ON -DCMAKE_CXX_STANDARD=23 -G ${{ matrix.cmake_generator }}
     
     - name: Build
       run: cmake --build build --config ${{ matrix.build_type }}
