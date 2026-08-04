@@ -30,9 +30,9 @@ jobs:
       uses: actions/checkout@v4
     
     - name: Set up CMake
-      uses: cmake/setup-cmake@v3
+      uses: lukka/get-cmake@latest
       with:
-        cmake-version: '3.28.x'
+        cmakeVersion: '3.28.x'
     
     - name: Configure CMake
       run: |
@@ -77,9 +77,9 @@ jobs:
       uses: actions/checkout@v4
     
     - name: Set up CMake
-      uses: cmake/setup-cmake@v3
+      uses: lukka/get-cmake@latest
       with:
-        cmake-version: '3.28.x'
+        cmakeVersion: '3.28.x'
     
     - name: Build C++ Library
       run: |
@@ -148,9 +148,9 @@ jobs:
       uses: actions/checkout@v4
     
     - name: Set up CMake
-      uses: cmake/setup-cmake@v3
+      uses: lukka/get-cmake@latest
       with:
-        cmake-version: '3.28.x'
+        cmakeVersion: '3.28.x'
     
     - name: Configure with clang-tidy
       run: |
