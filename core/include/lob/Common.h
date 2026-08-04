@@ -29,6 +29,8 @@ namespace std {
     using Kokkos::extents;
     using Kokkos::dextents;
 }
+#else
+// No mdspan support available
 #endif
 
 namespace lob {
