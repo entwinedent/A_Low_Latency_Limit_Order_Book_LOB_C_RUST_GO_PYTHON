@@ -16,6 +16,9 @@ target_link_libraries(lob_core_impl
         lob_core
         spdlog
 )
+if(TARGET kokkos_mdspan)
+    target_link_libraries(lob_core_impl PUBLIC kokkos_mdspan)
+endif()
 
 # Create shared library for FFI bindings
 add_library(lob_core_shared SHARED
@@ -34,6 +37,9 @@ target_link_libraries(lob_core_shared
     PUBLIC
         spdlog
 )
+if(TARGET kokkos_mdspan)
+    target_link_libraries(lob_core_shared PUBLIC kokkos_mdspan)
+endif()
 
 # Set library version
 set_target_properties(lob_core_shared PROPERTIES

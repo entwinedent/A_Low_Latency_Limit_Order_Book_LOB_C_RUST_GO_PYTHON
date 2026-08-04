@@ -6,10 +6,6 @@
 #include <new>
 #include <cstring>
 
-#ifdef _WIN32
-#include <malloc.h>
-#endif
-
 namespace lob {
 
 // Arena Allocator for zero-cost temporary allocations
@@ -23,11 +19,7 @@ public:
         , offset_(0)
     {
         // Allocate aligned memory
-#ifdef _WIN32
         buffer_ = _aligned_malloc(capacity_, 64);
-#else
-        buffer_ = aligned_alloc(64, capacity_);
-#endif
         if (!buffer_) {
             throw std::bad_alloc();
         }
@@ -35,11 +27,7 @@ public:
     
     ~ArenaAllocator() {
         if (buffer_) {
-#ifdef _WIN32
             _aligned_free(buffer_);
-#else
-            free(buffer_);
-#endif
         }
     }
     

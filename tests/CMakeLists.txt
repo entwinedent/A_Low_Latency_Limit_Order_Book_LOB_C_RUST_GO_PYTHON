@@ -31,10 +31,6 @@ target_link_libraries(test_intrusive_list
         gtest_main
 )
 
-if(TARGET kokkos_mdspan)
-    target_link_libraries(test_intrusive_list PRIVATE kokkos_mdspan)
-endif()
-
 add_test(NAME TestIntrusiveList COMMAND test_intrusive_list)
 
 add_executable(test_order_book

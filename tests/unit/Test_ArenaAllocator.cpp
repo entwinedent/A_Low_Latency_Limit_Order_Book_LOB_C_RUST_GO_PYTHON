@@ -130,7 +130,6 @@ TEST(ArenaAllocatorTest, SequentialAllocation) {
     }
 }
 
-#ifdef _WIN32
 TEST(ArenaAllocatorTest, StringAllocation) {
     ArenaAllocator arena(1024);
     
@@ -140,18 +139,6 @@ TEST(ArenaAllocatorTest, StringAllocation) {
     strcpy_s(str, 100, "Hello, Arena!");
     EXPECT_STREQ(str, "Hello, Arena!");
 }
-#else
-TEST(ArenaAllocatorTest, StringAllocation) {
-    ArenaAllocator arena(1024);
-    
-    char* str = static_cast<char*>(arena.allocate(100));
-    ASSERT_NE(str, nullptr);
-    
-    strncpy(str, "Hello, Arena!", 99);
-    str[99] = '\0';
-    EXPECT_STREQ(str, "Hello, Arena!");
-}
-#endif
 
 TEST(ArenaAllocatorTest, CapacityCheck) {
     ArenaAllocator arena(512);

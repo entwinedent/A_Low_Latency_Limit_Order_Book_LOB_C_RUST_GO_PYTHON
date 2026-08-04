@@ -12,11 +12,6 @@ Makefile
 *.cmake
 !cmake/*.cmake
 
-# External dependencies (fetched by CMake FetchContent)
-_deps/
-core/spdlog/
-
-
 # Compiled files
 *.o
 *.obj
