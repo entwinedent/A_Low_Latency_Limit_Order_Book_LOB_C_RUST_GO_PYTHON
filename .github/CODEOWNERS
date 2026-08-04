@@ -1,0 +1,36 @@
+# Code Owners File
+# This file defines who owns which parts of the codebase for automatic review assignment
+
+# Default code owners for the entire repository
+* @maintainer
+
+# Core C++ library
+/core/ @maintainer
+
+# Language bindings
+/bindings/go/ @maintainer
+/bindings/rust/ @maintainer
+/bindings/python/ @maintainer
+
+# Tests and benchmarks
+/tests/ @maintainer
+/bench/ @maintainer
+
+# CI/CD configuration
+.github/ @maintainer
+Dockerfile @maintainer
+docker-compose.yml @maintainer
+
+# Documentation
+/docs/ @maintainer
+*.md @maintainer
+
+# Build configuration
+CMakeLists.txt @maintainer
+cmake/ @maintainer
+conanfile.py @maintainer
+conanfile.txt @maintainer
+vcpkg.json @maintainer
+
+# Scripts and tools
+/scripts/ @maintainer

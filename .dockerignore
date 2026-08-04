@@ -1,0 +1,12 @@
+.git
+.github
+.venv
+build
+build-coverage
+htmlcov
+.pytest_cache
+__pycache__
+*.pyc
+*.pyo
+.coverage
+.vscode

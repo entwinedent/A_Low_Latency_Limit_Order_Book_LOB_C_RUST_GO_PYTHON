@@ -1,0 +1,13 @@
+[run]
+branch = True
+source =
+    core
+    bindings/python/lob
+
+[report]
+omit =
+    */tests/*
+    */__pycache__/*
+    */site-packages/*
+    */build/*
+show_missing = True

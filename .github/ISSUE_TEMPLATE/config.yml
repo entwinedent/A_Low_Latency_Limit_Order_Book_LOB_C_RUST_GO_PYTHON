@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Questions and Discussions
+    url: https://github.com/yourusername/lob/discussions
+    about: Use GitHub Discussions for questions that don't fit in bug reports or feature requests
+  - name: Documentation
+    url: https://github.com/yourusername/lob/blob/main/README.md
+    about: Read the project documentation for setup and usage information
+  - name: Architecture Overview
+    url: https://github.com/yourusername/lob/blob/main/ARCHITECTURE.md
+    about: Learn about the system architecture and design decisions

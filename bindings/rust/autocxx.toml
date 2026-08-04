@@ -1,0 +1,13 @@
+# autocxx configuration file
+# This file configures how autocxx parses C++ headers
+
+[include]
+# Additional include paths
+paths = ["../../core/include"]
+
+[exclude]
+# Exclude problematic types or patterns
+types = []
+
+[overrides]
+# Override specific type mappings

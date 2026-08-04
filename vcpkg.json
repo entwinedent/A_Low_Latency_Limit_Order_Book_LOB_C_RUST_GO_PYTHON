@@ -1,0 +1,12 @@
+{
+  "name": "lob-engine",
+  "version": "1.0.0",
+  "description": "Low-Latency Limit Order Book Engine",
+  "dependencies": [
+    "googletest",
+    "benchmark",
+    "spdlog",
+    "fmt"
+  ],
+  "builtin-baseline": "2024-08-03"
+}

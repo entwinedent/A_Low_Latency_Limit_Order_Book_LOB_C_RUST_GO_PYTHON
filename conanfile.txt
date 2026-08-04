@@ -1,0 +1,15 @@
+[requires]
+googletest/1.14.0
+benchmark/1.8.3
+spdlog/1.12.0
+fmt/10.1.1
+
+[generators]
+CMakeDeps
+CMakeToolchain
+
+[options]
+googletest/shared=False
+benchmark/shared=False
+spdlog/shared=False
+fmt/shared=False

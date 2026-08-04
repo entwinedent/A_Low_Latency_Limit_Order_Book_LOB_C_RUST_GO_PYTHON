@@ -1,0 +1,173 @@
+-- The CXX compiler identification is Clang 22.1.8 with GNU-like command-line
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Program Files/LLVM/bin/clang++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- The C compiler identification is Clang 22.1.8 with GNU-like command-line
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Program Files/LLVM/bin/clang.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Found Python3: C:/Python314/python.exe (found version "3.14.6") found components: Interpreter
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - not found
+-- Check if compiler accepts -pthread
+-- Check if compiler accepts -pthread - no
+-- Found Threads: TRUE
+-- Found Git: C:/Program Files/Git/cmd/git.exe (found version "2.55.0.windows.3")
+-- git version: v1.8.3 normalized to 1.8.3
+-- Google Benchmark version: 1.8.3
+-- Looking for shm_open in rt
+-- Looking for shm_open in rt - not found
+-- Performing Test HAVE_CXX_FLAG_WALL
+-- Performing Test HAVE_CXX_FLAG_WALL - Success
+-- Performing Test HAVE_CXX_FLAG_WEXTRA
+-- Performing Test HAVE_CXX_FLAG_WEXTRA - Success
+-- Performing Test HAVE_CXX_FLAG_WSHADOW
+-- Performing Test HAVE_CXX_FLAG_WSHADOW - Success
+-- Performing Test HAVE_CXX_FLAG_WFLOAT_EQUAL
+-- Performing Test HAVE_CXX_FLAG_WFLOAT_EQUAL - Success
+-- Performing Test HAVE_CXX_FLAG_WOLD_STYLE_CAST
+-- Performing Test HAVE_CXX_FLAG_WOLD_STYLE_CAST - Success
+-- Performing Test HAVE_CXX_FLAG_WERROR
+-- Performing Test HAVE_CXX_FLAG_WERROR - Success
+-- Performing Test HAVE_CXX_FLAG_WSUGGEST_OVERRIDE
+-- Performing Test HAVE_CXX_FLAG_WSUGGEST_OVERRIDE - Success
+-- Performing Test HAVE_CXX_FLAG_PEDANTIC
+-- Performing Test HAVE_CXX_FLAG_PEDANTIC - Success
+-- Performing Test HAVE_CXX_FLAG_PEDANTIC_ERRORS
+-- Performing Test HAVE_CXX_FLAG_PEDANTIC_ERRORS - Success
+-- Performing Test HAVE_CXX_FLAG_WSHORTEN_64_TO_32
+-- Performing Test HAVE_CXX_FLAG_WSHORTEN_64_TO_32 - Success
+-- Performing Test HAVE_CXX_FLAG_FSTRICT_ALIASING
+-- Performing Test HAVE_CXX_FLAG_FSTRICT_ALIASING - Success
+-- Performing Test HAVE_CXX_FLAG_WNO_DEPRECATED_DECLARATIONS
+-- Performing Test HAVE_CXX_FLAG_WNO_DEPRECATED_DECLARATIONS - Success
+-- Performing Test HAVE_CXX_FLAG_WNO_DEPRECATED
+-- Performing Test HAVE_CXX_FLAG_WNO_DEPRECATED - Success
+-- Performing Test HAVE_CXX_FLAG_WSTRICT_ALIASING
+-- Performing Test HAVE_CXX_FLAG_WSTRICT_ALIASING - Success
+-- Performing Test HAVE_CXX_FLAG_WD654
+-- Performing Test HAVE_CXX_FLAG_WD654 - Failed
+-- Performing Test HAVE_CXX_FLAG_WTHREAD_SAFETY
+-- Performing Test HAVE_CXX_FLAG_WTHREAD_SAFETY - Success
+-- Enabling additional flags: -DINCLUDE_DIRECTORIES=C:/Users/formless/Desktop/A_Low_Latency_Limit_Order_Book_LOB_C_RUST_GO_PYTHON/build-coverage/_deps/benchmark-src/include
+-- Compiling and running to test HAVE_THREAD_SAFETY_ATTRIBUTES
+-- Performing Test HAVE_THREAD_SAFETY_ATTRIBUTES -- success
+-- Performing Test HAVE_CXX_FLAG_COVERAGE
+-- Performing Test HAVE_CXX_FLAG_COVERAGE - Success
+-- Enabling additional flags: -DCMAKE_CXX_STANDARD=14
+-- Compiling and running to test HAVE_STD_REGEX
+-- Performing Test HAVE_STD_REGEX -- success
+-- Enabling additional flags: -DCMAKE_CXX_STANDARD=14
+-- Compiling and running to test HAVE_GNU_POSIX_REGEX
+-- Performing Test HAVE_GNU_POSIX_REGEX -- failed to compile
+-- Enabling additional flags: -DCMAKE_CXX_STANDARD=14
+-- Compiling and running to test HAVE_POSIX_REGEX
+-- Performing Test HAVE_POSIX_REGEX -- failed to compile
+-- Compiling and running to test HAVE_STEADY_CLOCK
+-- Performing Test HAVE_STEADY_CLOCK -- success
+-- Compiling and running to test HAVE_PTHREAD_AFFINITY
+-- Performing Test HAVE_PTHREAD_AFFINITY -- failed to compile
+CMake Warning (author) at C:/Program Files/CMake/share/cmake-4.4/Modules/FetchContent.cmake:1968 (message):
+  Calling FetchContent_Populate(spdlog) is deprecated, call
+  FetchContent_MakeAvailable(spdlog) instead.  Policy CMP0169 can be set to
+  OLD to allow FetchContent_Populate(spdlog) to be called directly for now,
+  but the ability to call it with declared details will be removed completely
+  in a future version.
+Call Stack (most recent call first):
+  CMakeLists.txt:92 (FetchContent_Populate)
+This warning is for project developers.  Use -Wno-author to suppress it.
+
+-- Configuration Summary:
+--   Build Type: Debug
+--   C++ Standard: 20
+--   Build Tests: ON
+--   Build Benchmarks: ON
+--   Build Apps: ON
+--   Address Sanitizer: OFF
+--   Undefined Behavior Sanitizer: OFF
+--   Thread Sanitizer: OFF
+--   Coverage Instrumentation: ON
+-- Configuring done (29.2s)
+-- Generating done (0.1s)
+-- Build files have been written to: C:/Users/formless/Desktop/A_Low_Latency_Limit_Order_Book_LOB_C_RUST_GO_PYTHON/build-coverage
+[1/65] Building CXX object _deps/benchmark-build/src/CMakeFiles/benchmark.dir/console_reporter.cc.obj
+FAILED: [code=1] _deps/benchmark-build/src/CMakeFiles/benchmark.dir/console_reporter.cc.obj 
+"C:\Program Files\LLVM\bin\clang++.exe" -DBENCHMARK_STATIC_DEFINE -DHAVE_STD_REGEX -DHAVE_STEADY_CLOCK -DHAVE_THREAD_SAFETY_ATTRIBUTES -IC:/Users/formless/Desktop/A_Low_Latency_Limit_Order_Book_LOB_C_RUST_GO_PYTHON/build-coverage/_deps/benchmark-src/include -IC:/Users/formless/Desktop/A_Low_Latency_Limit_Order_Book_LOB_C_RUST_GO_PYTHON/build-coverage/_deps/benchmark-src/src -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety -O0 -g -Xclang -gcodeview -std=c++14 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -fvisibility-inlines-hidden -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-sign-compare "$<1:-g" "-O0>" --coverage -MD -MT _deps/benchmark-build/src/CMakeFiles/benchmark.dir/console_reporter.cc.obj -MF _deps\benchmark-build\src\CMakeFiles\benchmark.dir\console_reporter.cc.obj.d -o _deps/benchmark-build/src/CMakeFiles/benchmark.dir/console_reporter.cc.obj -c C:/Users/formless/Desktop/A_Low_Latency_Limit_Order_Book_LOB_C_RUST_GO_PYTHON/build-coverage/_deps/benchmark-src/src/console_reporter.cc
+clang++: error: no such file or directory: '$<1:-g'
+[2/65] Building CXX object _deps/benchmark-build/src/CMakeFiles/benchmark.dir/benchmark.cc.obj
+FAILED: [code=1] _deps/benchmark-build/src/CMakeFiles/benchmark.dir/benchmark.cc.obj 
+"C:\Program Files\LLVM\bin\clang++.exe" -DBENCHMARK_STATIC_DEFINE -DHAVE_STD_REGEX -DHAVE_STEADY_CLOCK -DHAVE_THREAD_SAFETY_ATTRIBUTES -IC:/Users/formless/Desktop/A_Low_Latency_Limit_Order_Book_LOB_C_RUST_GO_PYTHON/build-coverage/_deps/benchmark-src/include -IC:/Users/formless/Desktop/A_Low_Latency_Limit_Order_Book_LOB_C_RUST_GO_PYTHON/build-coverage/_deps/benchmark-src/src -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety -O0 -g -Xclang -gcodeview -std=c++14 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -fvisibility-inlines-hidden -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-sign-compare "$<1:-g" "-O0>" --coverage -MD -MT _deps/benchmark-build/src/CMakeFiles/benchmark.dir/benchmark.cc.obj -MF _deps\benchmark-build\src\CMakeFiles\benchmark.dir\benchmark.cc.obj.d -o _deps/benchmark-build/src/CMakeFiles/benchmark.dir/benchmark.cc.obj -c C:/Users/formless/Desktop/A_Low_Latency_Limit_Order_Book_LOB_C_RUST_GO_PYTHON/build-coverage/_deps/benchmark-src/src/benchmark.cc
+clang++: error: no such file or directory: '$<1:-g'
+[3/65] Building CXX object _deps/benchmark-build/src/CMakeFiles/benchmark.dir/benchmark_register.cc.obj
+FAILED: [code=1] _deps/benchmark-build/src/CMakeFiles/benchmark.dir/benchmark_register.cc.obj 
+"C:\Program Files\LLVM\bin\clang++.exe" -DBENCHMARK_STATIC_DEFINE -DHAVE_STD_REGEX -DHAVE_STEADY_CLOCK -DHAVE_THREAD_SAFETY_ATTRIBUTES -IC:/Users/formless/Desktop/A_Low_Latency_Limit_Order_Book_LOB_C_RUST_GO_PYTHON/build-coverage/_deps/benchmark-src/include -IC:/Users/formless/Desktop/A_Low_Latency_Limit_Order_Book_LOB_C_RUST_GO_PYTHON/build-coverage/_deps/benchmark-src/src -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety -O0 -g -Xclang -gcodeview -std=c++14 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -fvisibility-inlines-hidden -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-sign-compare "$<1:-g" "-O0>" --coverage -MD -MT _deps/benchmark-build/src/CMakeFiles/benchmark.dir/benchmark_register.cc.obj -MF _deps\benchmark-build\src\CMakeFiles\benchmark.dir\benchmark_register.cc.obj.d -o _deps/benchmark-build/src/CMakeFiles/benchmark.dir/benchmark_register.cc.obj -c C:/Users/formless/Desktop/A_Low_Latency_Limit_Order_Book_LOB_C_RUST_GO_PYTHON/build-coverage/_deps/benchmark-src/src/benchmark_register.cc
+clang++: error: no such file or directory: '$<1:-g'
+[4/65] Building CXX object _deps/benchmark-build/src/CMakeFiles/benchmark.dir/benchmark_api_internal.cc.obj
+FAILED: [code=1] _deps/benchmark-build/src/CMakeFiles/benchmark.dir/benchmark_api_internal.cc.obj 
+"C:\Program Files\LLVM\bin\clang++.exe" -DBENCHMARK_STATIC_DEFINE -DHAVE_STD_REGEX -DHAVE_STEADY_CLOCK -DHAVE_THREAD_SAFETY_ATTRIBUTES -IC:/Users/formless/Desktop/A_Low_Latency_Limit_Order_Book_LOB_C_RUST_GO_PYTHON/build-coverage/_deps/benchmark-src/include -IC:/Users/formless/Desktop/A_Low_Latency_Limit_Order_Book_LOB_C_RUST_GO_PYTHON/build-coverage/_deps/benchmark-src/src -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety -O0 -g -Xclang -gcodeview -std=c++14 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -fvisibility-inlines-hidden -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-sign-compare "$<1:-g" "-O0>" --coverage -MD -MT _deps/benchmark-build/src/CMakeFiles/benchmark.dir/benchmark_api_internal.cc.obj -MF _deps\benchmark-build\src\CMakeFiles\benchmark.dir\benchmark_api_internal.cc.obj.d -o _deps/benchmark-build/src/CMakeFiles/benchmark.dir/benchmark_api_internal.cc.obj -c C:/Users/formless/Desktop/A_Low_Latency_Limit_Order_Book_LOB_C_RUST_GO_PYTHON/build-coverage/_deps/benchmark-src/src/benchmark_api_internal.cc
+clang++: error: no such file or directory: '$<1:-g'
+[5/65] Building CXX object _deps/benchmark-build/src/CMakeFiles/benchmark.dir/benchmark_name.cc.obj
+FAILED: [code=1] _deps/benchmark-build/src/CMakeFiles/benchmark.dir/benchmark_name.cc.obj 
+"C:\Program Files\LLVM\bin\clang++.exe" -DBENCHMARK_STATIC_DEFINE -DHAVE_STD_REGEX -DHAVE_STEADY_CLOCK -DHAVE_THREAD_SAFETY_ATTRIBUTES -IC:/Users/formless/Desktop/A_Low_Latency_Limit_Order_Book_LOB_C_RUST_GO_PYTHON/build-coverage/_deps/benchmark-src/include -IC:/Users/formless/Desktop/A_Low_Latency_Limit_Order_Book_LOB_C_RUST_GO_PYTHON/build-coverage/_deps/benchmark-src/src -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety -O0 -g -Xclang -gcodeview -std=c++14 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -fvisibility-inlines-hidden -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-sign-compare "$<1:-g" "-O0>" --coverage -MD -MT _deps/benchmark-build/src/CMakeFiles/benchmark.dir/benchmark_name.cc.obj -MF _deps\benchmark-build\src\CMakeFiles\benchmark.dir\benchmark_name.cc.obj.d -o _deps/benchmark-build/src/CMakeFiles/benchmark.dir/benchmark_name.cc.obj -c C:/Users/formless/Desktop/A_Low_Latency_Limit_Order_Book_LOB_C_RUST_GO_PYTHON/build-coverage/_deps/benchmark-src/src/benchmark_name.cc
+clang++: error: no such file or directory: '$<1:-g'
+[6/65] Building CXX object _deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj
+FAILED: [code=1] _deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj 
+"C:\Program Files\LLVM\bin\clang++.exe"  -IC:/Users/formless/Desktop/A_Low_Latency_Limit_Order_Book_LOB_C_RUST_GO_PYTHON/build-coverage/_deps/googletest-src/googletest/include -IC:/Users/formless/Desktop/A_Low_Latency_Limit_Order_Book_LOB_C_RUST_GO_PYTHON/build-coverage/_deps/googletest-src/googletest -O0 -g -Xclang -gcodeview -std=c++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -Wall -Wshadow -Wconversion -Wundef -DGTEST_HAS_PTHREAD=0 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Winline -Wredundant-decls -Wchar-subscripts -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-sign-compare "$<1:-g" "-O0>" --coverage -MD -MT _deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj -MF _deps\googletest-build\googletest\CMakeFiles\gtest.dir\src\gtest-all.cc.obj.d -o _deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj -c C:/Users/formless/Desktop/A_Low_Latency_Limit_Order_Book_LOB_C_RUST_GO_PYTHON/build-coverage/_deps/googletest-src/googletest/src/gtest-all.cc
+clang++: error: no such file or directory: '$<1:-g'
+[7/65] Building CXX object _deps/benchmark-build/src/CMakeFiles/benchmark.dir/complexity.cc.obj
+FAILED: [code=1] _deps/benchmark-build/src/CMakeFiles/benchmark.dir/complexity.cc.obj 
+"C:\Program Files\LLVM\bin\clang++.exe" -DBENCHMARK_STATIC_DEFINE -DHAVE_STD_REGEX -DHAVE_STEADY_CLOCK -DHAVE_THREAD_SAFETY_ATTRIBUTES -IC:/Users/formless/Desktop/A_Low_Latency_Limit_Order_Book_LOB_C_RUST_GO_PYTHON/build-coverage/_deps/benchmark-src/include -IC:/Users/formless/Desktop/A_Low_Latency_Limit_Order_Book_LOB_C_RUST_GO_PYTHON/build-coverage/_deps/benchmark-src/src -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety -O0 -g -Xclang -gcodeview -std=c++14 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -fvisibility-inlines-hidden -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-sign-compare "$<1:-g" "-O0>" --coverage -MD -MT _deps/benchmark-build/src/CMakeFiles/benchmark.dir/complexity.cc.obj -MF _deps\benchmark-build\src\CMakeFiles\benchmark.dir\complexity.cc.obj.d -o _deps/benchmark-build/src/CMakeFiles/benchmark.dir/complexity.cc.obj -c C:/Users/formless/Desktop/A_Low_Latency_Limit_Order_Book_LOB_C_RUST_GO_PYTHON/build-coverage/_deps/benchmark-src/src/complexity.cc
+clang++: error: no such file or directory: '$<1:-g'
+[8/65] Building CXX object _deps/benchmark-build/src/CMakeFiles/benchmark.dir/counter.cc.obj
+FAILED: [code=1] _deps/benchmark-build/src/CMakeFiles/benchmark.dir/counter.cc.obj 
+"C:\Program Files\LLVM\bin\clang++.exe" -DBENCHMARK_STATIC_DEFINE -DHAVE_STD_REGEX -DHAVE_STEADY_CLOCK -DHAVE_THREAD_SAFETY_ATTRIBUTES -IC:/Users/formless/Desktop/A_Low_Latency_Limit_Order_Book_LOB_C_RUST_GO_PYTHON/build-coverage/_deps/benchmark-src/include -IC:/Users/formless/Desktop/A_Low_Latency_Limit_Order_Book_LOB_C_RUST_GO_PYTHON/build-coverage/_deps/benchmark-src/src -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety -O0 -g -Xclang -gcodeview -std=c++14 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -fvisibility-inlines-hidden -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-sign-compare "$<1:-g" "-O0>" --coverage -MD -MT _deps/benchmark-build/src/CMakeFiles/benchmark.dir/counter.cc.obj -MF _deps\benchmark-build\src\CMakeFiles\benchmark.dir\counter.cc.obj.d -o _deps/benchmark-build/src/CMakeFiles/benchmark.dir/counter.cc.obj -c C:/Users/formless/Desktop/A_Low_Latency_Limit_Order_Book_LOB_C_RUST_GO_PYTHON/build-coverage/_deps/benchmark-src/src/counter.cc
+clang++: error: no such file or directory: '$<1:-g'
+[9/65] Building CXX object _deps/benchmark-build/src/CMakeFiles/benchmark.dir/json_reporter.cc.obj
+FAILED: [code=1] _deps/benchmark-build/src/CMakeFiles/benchmark.dir/json_reporter.cc.obj 
+"C:\Program Files\LLVM\bin\clang++.exe" -DBENCHMARK_STATIC_DEFINE -DHAVE_STD_REGEX -DHAVE_STEADY_CLOCK -DHAVE_THREAD_SAFETY_ATTRIBUTES -IC:/Users/formless/Desktop/A_Low_Latency_Limit_Order_Book_LOB_C_RUST_GO_PYTHON/build-coverage/_deps/benchmark-src/include -IC:/Users/formless/Desktop/A_Low_Latency_Limit_Order_Book_LOB_C_RUST_GO_PYTHON/build-coverage/_deps/benchmark-src/src -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety -O0 -g -Xclang -gcodeview -std=c++14 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -fvisibility-inlines-hidden -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-sign-compare "$<1:-g" "-O0>" --coverage -MD -MT _deps/benchmark-build/src/CMakeFiles/benchmark.dir/json_reporter.cc.obj -MF _deps\benchmark-build\src\CMakeFiles\benchmark.dir\json_reporter.cc.obj.d -o _deps/benchmark-build/src/CMakeFiles/benchmark.dir/json_reporter.cc.obj -c C:/Users/formless/Desktop/A_Low_Latency_Limit_Order_Book_LOB_C_RUST_GO_PYTHON/build-coverage/_deps/benchmark-src/src/json_reporter.cc
+clang++: error: no such file or directory: '$<1:-g'
+[10/65] Building CXX object _deps/benchmark-build/src/CMakeFiles/benchmark.dir/benchmark_runner.cc.obj
+FAILED: [code=1] _deps/benchmark-build/src/CMakeFiles/benchmark.dir/benchmark_runner.cc.obj 
+"C:\Program Files\LLVM\bin\clang++.exe" -DBENCHMARK_STATIC_DEFINE -DHAVE_STD_REGEX -DHAVE_STEADY_CLOCK -DHAVE_THREAD_SAFETY_ATTRIBUTES -IC:/Users/formless/Desktop/A_Low_Latency_Limit_Order_Book_LOB_C_RUST_GO_PYTHON/build-coverage/_deps/benchmark-src/include -IC:/Users/formless/Desktop/A_Low_Latency_Limit_Order_Book_LOB_C_RUST_GO_PYTHON/build-coverage/_deps/benchmark-src/src -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety -O0 -g -Xclang -gcodeview -std=c++14 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -fvisibility-inlines-hidden -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-sign-compare "$<1:-g" "-O0>" --coverage -MD -MT _deps/benchmark-build/src/CMakeFiles/benchmark.dir/benchmark_runner.cc.obj -MF _deps\benchmark-build\src\CMakeFiles\benchmark.dir\benchmark_runner.cc.obj.d -o _deps/benchmark-build/src/CMakeFiles/benchmark.dir/benchmark_runner.cc.obj -c C:/Users/formless/Desktop/A_Low_Latency_Limit_Order_Book_LOB_C_RUST_GO_PYTHON/build-coverage/_deps/benchmark-src/src/benchmark_runner.cc
+clang++: error: no such file or directory: '$<1:-g'
+[11/65] Building CXX object _deps/benchmark-build/src/CMakeFiles/benchmark.dir/commandlineflags.cc.obj
+FAILED: [code=1] _deps/benchmark-build/src/CMakeFiles/benchmark.dir/commandlineflags.cc.obj 
+"C:\Program Files\LLVM\bin\clang++.exe" -DBENCHMARK_STATIC_DEFINE -DHAVE_STD_REGEX -DHAVE_STEADY_CLOCK -DHAVE_THREAD_SAFETY_ATTRIBUTES -IC:/Users/formless/Desktop/A_Low_Latency_Limit_Order_Book_LOB_C_RUST_GO_PYTHON/build-coverage/_deps/benchmark-src/include -IC:/Users/formless/Desktop/A_Low_Latency_Limit_Order_Book_LOB_C_RUST_GO_PYTHON/build-coverage/_deps/benchmark-src/src -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety -O0 -g -Xclang -gcodeview -std=c++14 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -fvisibility-inlines-hidden -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-sign-compare "$<1:-g" "-O0>" --coverage -MD -MT _deps/benchmark-build/src/CMakeFiles/benchmark.dir/commandlineflags.cc.obj -MF _deps\benchmark-build\src\CMakeFiles\benchmark.dir\commandlineflags.cc.obj.d -o _deps/benchmark-build/src/CMakeFiles/benchmark.dir/commandlineflags.cc.obj -c C:/Users/formless/Desktop/A_Low_Latency_Limit_Order_Book_LOB_C_RUST_GO_PYTHON/build-coverage/_deps/benchmark-src/src/commandlineflags.cc
+clang++: error: no such file or directory: '$<1:-g'
+[12/65] Building CXX object _deps/benchmark-build/src/CMakeFiles/benchmark.dir/check.cc.obj
+FAILED: [code=1] _deps/benchmark-build/src/CMakeFiles/benchmark.dir/check.cc.obj 
+"C:\Program Files\LLVM\bin\clang++.exe" -DBENCHMARK_STATIC_DEFINE -DHAVE_STD_REGEX -DHAVE_STEADY_CLOCK -DHAVE_THREAD_SAFETY_ATTRIBUTES -IC:/Users/formless/Desktop/A_Low_Latency_Limit_Order_Book_LOB_C_RUST_GO_PYTHON/build-coverage/_deps/benchmark-src/include -IC:/Users/formless/Desktop/A_Low_Latency_Limit_Order_Book_LOB_C_RUST_GO_PYTHON/build-coverage/_deps/benchmark-src/src -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety -O0 -g -Xclang -gcodeview -std=c++14 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -fvisibility-inlines-hidden -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-sign-compare "$<1:-g" "-O0>" --coverage -MD -MT _deps/benchmark-build/src/CMakeFiles/benchmark.dir/check.cc.obj -MF _deps\benchmark-build\src\CMakeFiles\benchmark.dir\check.cc.obj.d -o _deps/benchmark-build/src/CMakeFiles/benchmark.dir/check.cc.obj -c C:/Users/formless/Desktop/A_Low_Latency_Limit_Order_Book_LOB_C_RUST_GO_PYTHON/build-coverage/_deps/benchmark-src/src/check.cc
+clang++: error: no such file or directory: '$<1:-g'
+[13/65] Building CXX object _deps/benchmark-build/src/CMakeFiles/benchmark.dir/colorprint.cc.obj
+FAILED: [code=1] _deps/benchmark-build/src/CMakeFiles/benchmark.dir/colorprint.cc.obj 
+"C:\Program Files\LLVM\bin\clang++.exe" -DBENCHMARK_STATIC_DEFINE -DHAVE_STD_REGEX -DHAVE_STEADY_CLOCK -DHAVE_THREAD_SAFETY_ATTRIBUTES -IC:/Users/formless/Desktop/A_Low_Latency_Limit_Order_Book_LOB_C_RUST_GO_PYTHON/build-coverage/_deps/benchmark-src/include -IC:/Users/formless/Desktop/A_Low_Latency_Limit_Order_Book_LOB_C_RUST_GO_PYTHON/build-coverage/_deps/benchmark-src/src -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety -O0 -g -Xclang -gcodeview -std=c++14 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -fvisibility-inlines-hidden -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-sign-compare "$<1:-g" "-O0>" --coverage -MD -MT _deps/benchmark-build/src/CMakeFiles/benchmark.dir/colorprint.cc.obj -MF _deps\benchmark-build\src\CMakeFiles\benchmark.dir\colorprint.cc.obj.d -o _deps/benchmark-build/src/CMakeFiles/benchmark.dir/colorprint.cc.obj -c C:/Users/formless/Desktop/A_Low_Latency_Limit_Order_Book_LOB_C_RUST_GO_PYTHON/build-coverage/_deps/benchmark-src/src/colorprint.cc
+clang++: error: no such file or directory: '$<1:-g'
+[14/65] Building CXX object _deps/benchmark-build/src/CMakeFiles/benchmark.dir/csv_reporter.cc.obj
+FAILED: [code=1] _deps/benchmark-build/src/CMakeFiles/benchmark.dir/csv_reporter.cc.obj 
+"C:\Program Files\LLVM\bin\clang++.exe" -DBENCHMARK_STATIC_DEFINE -DHAVE_STD_REGEX -DHAVE_STEADY_CLOCK -DHAVE_THREAD_SAFETY_ATTRIBUTES -IC:/Users/formless/Desktop/A_Low_Latency_Limit_Order_Book_LOB_C_RUST_GO_PYTHON/build-coverage/_deps/benchmark-src/include -IC:/Users/formless/Desktop/A_Low_Latency_Limit_Order_Book_LOB_C_RUST_GO_PYTHON/build-coverage/_deps/benchmark-src/src -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety -O0 -g -Xclang -gcodeview -std=c++14 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -fvisibility-inlines-hidden -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-sign-compare "$<1:-g" "-O0>" --coverage -MD -MT _deps/benchmark-build/src/CMakeFiles/benchmark.dir/csv_reporter.cc.obj -MF _deps\benchmark-build\src\CMakeFiles\benchmark.dir\csv_reporter.cc.obj.d -o _deps/benchmark-build/src/CMakeFiles/benchmark.dir/csv_reporter.cc.obj -c C:/Users/formless/Desktop/A_Low_Latency_Limit_Order_Book_LOB_C_RUST_GO_PYTHON/build-coverage/_deps/benchmark-src/src/csv_reporter.cc
+clang++: error: no such file or directory: '$<1:-g'
+[15/65] Building CXX object _deps/benchmark-build/src/CMakeFiles/benchmark.dir/reporter.cc.obj
+FAILED: [code=1] _deps/benchmark-build/src/CMakeFiles/benchmark.dir/reporter.cc.obj 
+"C:\Program Files\LLVM\bin\clang++.exe" -DBENCHMARK_STATIC_DEFINE -DHAVE_STD_REGEX -DHAVE_STEADY_CLOCK -DHAVE_THREAD_SAFETY_ATTRIBUTES -IC:/Users/formless/Desktop/A_Low_Latency_Limit_Order_Book_LOB_C_RUST_GO_PYTHON/build-coverage/_deps/benchmark-src/include -IC:/Users/formless/Desktop/A_Low_Latency_Limit_Order_Book_LOB_C_RUST_GO_PYTHON/build-coverage/_deps/benchmark-src/src -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety -O0 -g -Xclang -gcodeview -std=c++14 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -fvisibility-inlines-hidden -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-sign-compare "$<1:-g" "-O0>" --coverage -MD -MT _deps/benchmark-build/src/CMakeFiles/benchmark.dir/reporter.cc.obj -MF _deps\benchmark-build\src\CMakeFiles\benchmark.dir\reporter.cc.obj.d -o _deps/benchmark-build/src/CMakeFiles/benchmark.dir/reporter.cc.obj -c C:/Users/formless/Desktop/A_Low_Latency_Limit_Order_Book_LOB_C_RUST_GO_PYTHON/build-coverage/_deps/benchmark-src/src/reporter.cc
+clang++: error: no such file or directory: '$<1:-g'
+[16/65] Building CXX object _deps/benchmark-build/src/CMakeFiles/benchmark.dir/perf_counters.cc.obj
+FAILED: [code=1] _deps/benchmark-build/src/CMakeFiles/benchmark.dir/perf_counters.cc.obj 
+"C:\Program Files\LLVM\bin\clang++.exe" -DBENCHMARK_STATIC_DEFINE -DHAVE_STD_REGEX -DHAVE_STEADY_CLOCK -DHAVE_THREAD_SAFETY_ATTRIBUTES -IC:/Users/formless/Desktop/A_Low_Latency_Limit_Order_Book_LOB_C_RUST_GO_PYTHON/build-coverage/_deps/benchmark-src/include -IC:/Users/formless/Desktop/A_Low_Latency_Limit_Order_Book_LOB_C_RUST_GO_PYTHON/build-coverage/_deps/benchmark-src/src -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety -O0 -g -Xclang -gcodeview -std=c++14 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -fvisibility-inlines-hidden -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-sign-compare "$<1:-g" "-O0>" --coverage -MD -MT _deps/benchmark-build/src/CMakeFiles/benchmark.dir/perf_counters.cc.obj -MF _deps\benchmark-build\src\CMakeFiles\benchmark.dir\perf_counters.cc.obj.d -o _deps/benchmark-build/src/CMakeFiles/benchmark.dir/perf_counters.cc.obj -c C:/Users/formless/Desktop/A_Low_Latency_Limit_Order_Book_LOB_C_RUST_GO_PYTHON/build-coverage/_deps/benchmark-src/src/perf_counters.cc
+clang++: error: no such file or directory: '$<1:-g'
+[17/65] Building CXX object _deps/benchmark-build/src/CMakeFiles/benchmark.dir/statistics.cc.obj
+FAILED: [code=1] _deps/benchmark-build/src/CMakeFiles/benchmark.dir/statistics.cc.obj 
+"C:\Program Files\LLVM\bin\clang++.exe" -DBENCHMARK_STATIC_DEFINE -DHAVE_STD_REGEX -DHAVE_STEADY_CLOCK -DHAVE_THREAD_SAFETY_ATTRIBUTES -IC:/Users/formless/Desktop/A_Low_Latency_Limit_Order_Book_LOB_C_RUST_GO_PYTHON/build-coverage/_deps/benchmark-src/include -IC:/Users/formless/Desktop/A_Low_Latency_Limit_Order_Book_LOB_C_RUST_GO_PYTHON/build-coverage/_deps/benchmark-src/src -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety -O0 -g -Xclang -gcodeview -std=c++14 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -fvisibility-inlines-hidden -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-sign-compare "$<1:-g" "-O0>" --coverage -MD -MT _deps/benchmark-build/src/CMakeFiles/benchmark.dir/statistics.cc.obj -MF _deps\benchmark-build\src\CMakeFiles\benchmark.dir\statistics.cc.obj.d -o _deps/benchmark-build/src/CMakeFiles/benchmark.dir/statistics.cc.obj -c C:/Users/formless/Desktop/A_Low_Latency_Limit_Order_Book_LOB_C_RUST_GO_PYTHON/build-coverage/_deps/benchmark-src/src/statistics.cc
+clang++: error: no such file or directory: '$<1:-g'
+[18/65] Building CXX object _deps/benchmark-build/src/CMakeFiles/benchmark.dir/string_util.cc.obj
+FAILED: [code=1] _deps/benchmark-build/src/CMakeFiles/benchmark.dir/string_util.cc.obj 
+"C:\Program Files\LLVM\bin\clang++.exe" -DBENCHMARK_STATIC_DEFINE -DHAVE_STD_REGEX -DHAVE_STEADY_CLOCK -DHAVE_THREAD_SAFETY_ATTRIBUTES -IC:/Users/formless/Desktop/A_Low_Latency_Limit_Order_Book_LOB_C_RUST_GO_PYTHON/build-coverage/_deps/benchmark-src/include -IC:/Users/formless/Desktop/A_Low_Latency_Limit_Order_Book_LOB_C_RUST_GO_PYTHON/build-coverage/_deps/benchmark-src/src -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Werror  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated  -Wstrict-aliasing  -Wthread-safety -O0 -g -Xclang -gcodeview -std=c++14 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -fvisibility-inlines-hidden -Wall -Wextra -Wpedantic -Wno-unused-parameter -Wno-sign-compare "$<1:-g" "-O0>" --coverage -MD -MT _deps/benchmark-build/src/CMakeFiles/benchmark.dir/string_util.cc.obj -MF _deps\benchmark-build\src\CMakeFiles\benchmark.dir\string_util.cc.obj.d -o _deps/benchmark-build/src/CMakeFiles/benchmark.dir/string_util.cc.obj -c C:/Users/formless/Desktop/A_Low_Latency_Limit_Order_Book_LOB_C_RUST_GO_PYTHON/build-coverage/_deps/benchmark-src/src/string_util.cc
+clang++: error: no such file or directory: '$<1:-g'
+ninja: build stopped: subcommand failed.

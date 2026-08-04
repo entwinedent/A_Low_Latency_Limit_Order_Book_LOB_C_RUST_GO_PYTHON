@@ -1,0 +1,15 @@
+# Git blame ignore revs
+# Use this file to ignore commits that are mass reformatting or automated changes
+# that would otherwise clutter git blame output
+
+# Example: Ignore a clang-format reformatting commit
+# <commit-hash>
+
+# Example: Ignore automated code generation
+# <commit-hash>
+
+# To add a commit:
+# 1. Get the commit hash: git rev-parse HEAD
+# 2. Add the hash to this file
+# 3. Commit this file
+# 4. Run: git config blame.ignoreRevsFile .git-blame-ignore-revs

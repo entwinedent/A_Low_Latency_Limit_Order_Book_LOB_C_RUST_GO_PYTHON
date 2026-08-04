@@ -1,0 +1,47 @@
+# Codecov configuration
+# See https://docs.codecov.com/docs/codecov-yaml for more information
+
+coverage:
+  precision: 2
+  round: down
+  range: "70...100"
+  status:
+    project:
+      default:
+        target: auto
+        threshold: 1%
+        informational: true
+    patch:
+      default:
+        target: auto
+        threshold: 1%
+        informational: true
+
+comment:
+  layout: "reach,diff,flags,files,footer"
+  behavior: default
+  require_changes: false
+
+ignore:
+  - "tests/"
+  - "bench/"
+  - "bindings/"
+  - "apps/"
+  - "build*/"
+  - "cmake/"
+  - "scripts/"
+  - "*.md"
+  - "*.txt"
+  - "*.yml"
+  - "*.yaml"
+
+flags:
+  unittests:
+    paths:
+      - "tests/"
+  core:
+    paths:
+      - "core/"
+
+github_checks:
+  annotations: true
